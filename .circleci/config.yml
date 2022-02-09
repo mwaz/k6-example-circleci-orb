@@ -1,11 +1,4 @@
-version: 2.1
-orbs:
- k6io: k6io/test@1.1.0
-workflows:
-  load_test:
-   jobs:
-     - k6io/test:
-         script: /loadtests/performance-test.js
+
   # nightly:
   #   triggers:
   #     - schedule:
@@ -16,4 +9,11 @@ workflows:
   #               - master
   #   jobs:
   #      - k6io/test
-         
+version: 2.1
+orbs:
+  k6io: k6io/test@1.1.0
+workflows:
+  load_test:
+    jobs:
+      - k6io/test:
+          script: loadtests/performance-test.js
