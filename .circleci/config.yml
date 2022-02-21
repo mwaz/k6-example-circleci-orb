@@ -5,7 +5,7 @@ workflows:
   load_test:
     jobs:
       - k6io/test:
-          cloud: true
+          cloud: FALSE
           script: loadtests/performance-test.js
           token: K6_CLOUD_TOKEN
 
