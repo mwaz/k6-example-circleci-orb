@@ -6,8 +6,8 @@ workflows:
     jobs:
       - k6io/test:
           cloud: true
-          token: K6_CLOUD_TOKEN
-          script: tests/cloud-test.js
+          script: loadtests/performance-test.js
       - k6io/test:
+          cloud: true
           token: K6_CLOUD_TOKEN
-          script: echo "$K6_CLOUD_TOKEN"
+          script: k6 login cloud --token K6_CLOUD_TOKEN
