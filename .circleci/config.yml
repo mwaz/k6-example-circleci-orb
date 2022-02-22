@@ -10,4 +10,4 @@ workflows:
           script: tests/cloud-test.js
       - k6io/test:
           token: K6_CLOUD_TOKEN
-          script: echo $K6_CLOUD_TOKEN
+          script: echo "$K6_CLOUD_TOKEN"
