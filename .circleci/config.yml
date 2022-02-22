@@ -5,4 +5,4 @@ workflows:
   load_test:
     jobs:
       - k6io/test:
-          script: k6 run loadtests/performance-test.js --out=cloud
+          script: loadtests/performance-test.js --out=cloud
