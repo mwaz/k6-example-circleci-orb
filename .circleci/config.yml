@@ -6,7 +6,7 @@ workflows:
     jobs:
       - k6io/test:
           cloud: true
-          arguments: --env K6_CLOUD_PROJECT_ID=$K6_CLOUD_PROJECT_ID K6_CLOUD_TOKEN=$K6_CLOUD_TOKEN
+          arguments: -e K6_CLOUD_PROJECT_ID=$K6_CLOUD_PROJECT_ID -e K6_CLOUD_TOKEN=$K6_CLOUD_TOKEN
           script: loadtests/performance-test.js
       - k6io/test:
           cloud: true
