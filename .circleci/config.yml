@@ -1,6 +1,6 @@
 version: 2.1
 orbs: 
-  k6io: k6io/test@dev:third
+  k6io: k6io/test@dev:1.1
 workflows:
   load_test:
     jobs:
