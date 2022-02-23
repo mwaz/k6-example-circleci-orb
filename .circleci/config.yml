@@ -1,9 +1,10 @@
 version: 2.1
 orbs: 
-  k6io: k6io/test@dev:1.1
+  k6io: k6io/test@dev:1.2
 workflows:
   load_test:
     jobs:
       - k6io/test:
-          script: loadtests/performance-test.js --out cloud
+          script: loadtests/performance-test.js
+          cloud: true
 
