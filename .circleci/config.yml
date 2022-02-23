@@ -1,6 +1,6 @@
 version: 2.1
 orbs: 
-  k6io: k6io/test@dev:1.4
+  k6io: k6io/test@dev:1.5
 workflows:
   load_test:
     jobs:
@@ -8,4 +8,7 @@ workflows:
           script: loadtests/performance-test.js
           cloud: true
           token: K6_CLOUD_TOKEN
+      - k6io/test:
+          script: loadtests/performance-test.js
+
 
