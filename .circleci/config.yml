@@ -4,6 +4,8 @@ orbs:
 workflows:
  load_test:
    jobs:
-     - grafana/k6:
+    - grafana/k6:
          script: loadtests/performance-test.js
          cloud: true
+    - grafana/k6:
+         script: loadtests/performance-test.js
