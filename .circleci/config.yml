@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
- grafana: grafana/test@dev:0.0.1
+ grafana: grafana/k6@dev:0.0.1
 workflows:
  load_test:
    jobs:
