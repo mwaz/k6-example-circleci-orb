@@ -1,11 +1,8 @@
 version: 2.1
 orbs:
- grafana: grafana/k6@dev:alpha
+  grafana: grafana/k6@1.0.1
 workflows:
- load_test:
-   jobs:
-    - grafana/k6:
-         script: loadtests/performance-test.js
-         cloud: true
-    - grafana/k6:
-         script: loadtests/performance-test.js
+  load_test:
+    jobs:
+     - grafana/k6:
+          script: loadtests/performance-test.js
