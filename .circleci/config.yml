@@ -5,4 +5,5 @@ workflows:
   load_test:
     jobs:
      - grafana/k6:
+          cloud: true
           script: loadtests/performance-test.js
