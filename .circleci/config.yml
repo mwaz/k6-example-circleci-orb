@@ -5,4 +5,4 @@ workflows:
  load_test:
    jobs:
     - grafana/k6:
-         script: loadtests/performance-test.js --out json=full.json > /tmp/nothing
+         script: loadtests/performance-test.js --out json=full.json > /tmp/artifacts/nothing
